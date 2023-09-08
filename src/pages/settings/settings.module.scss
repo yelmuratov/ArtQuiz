@@ -1,0 +1,102 @@
+.settings{
+  text-align: center;
+  background: rgba(255, 255, 255, 0.75);
+
+  .logo{
+    padding-top: 50px;
+  }
+
+  .settingTitle{
+    font-size: 36px;
+    font-weight: 400;
+    color: #603;
+    margin: 21px 0;
+  }
+
+  .setting{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    gap: 170px;
+    justify-content: space-between;
+
+    .volumeSetting,.timeSetting{
+      width: 415px;
+      height: 415px;
+      padding: 89px 64px;
+      background-color: #fff;
+      box-sizing: border-box;
+      box-shadow: 2px 2px 15px #000;  
+    }
+
+    .volume{
+      margin-top: 20px;
+
+      .sound{
+        display: flex;
+        margin-top: 67px;
+        margin-bottom: 62px;
+      }
+
+      input{
+        width: 270px;
+        margin-left: 10px;
+        accent-color: #603;
+        outline: none;
+        border: none;
+      }
+
+      .volumeTitle{
+        text-transform: uppercase;
+        color: #603;
+        font-size: 36px;
+      }
+    }
+
+    .timeSetting {
+      .rectangle{
+        width: 30px;
+        height: 30px;
+        border: 1px solid #603;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 10px;
+      }
+      .switch{
+        font-size: 18px;
+        color: #603;
+        text-transform: uppercase;
+      }
+
+      .timeTitle{
+        margin-top: 20px;
+        text-transform: uppercase;
+        color: #603;
+        font-size: 36px;
+      }
+    }
+  }
+
+  .btn{
+    background-color: #603;
+    color: #fff;
+    border: none;
+    width: 150px;
+    height: 50px;
+    margin: 50px;
+    margin-top: 70px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: box-shadow .5s ease;
+  }
+
+  .btn:hover{
+    box-shadow: 2px 2px 4px rgba(0,0,0,.7);
+    cursor: pointer;
+  }
+}

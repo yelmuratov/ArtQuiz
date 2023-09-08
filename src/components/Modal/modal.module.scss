@@ -1,0 +1,85 @@
+.modalBackground{
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  backdrop-filter: blur(2px);
+
+  .modal{
+    position: fixed;
+    width: 682px;
+    height: 745px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .checkImg{
+    font-size: 34px;
+    color: #603;
+    font-weight: bold;
+
+    img{
+      width: 30px;
+      height: 30px;
+    }
+    margin-bottom: 10px;
+  }
+
+  .mainImg{
+    img{
+      box-shadow: rgba(0, 0, 0, 0.78) 5px 5px 15px;
+      height: 500px;
+      max-height: 500px;
+      width: 500px;
+      border-radius: 15px;
+    }
+  }
+
+  .imgDescription{
+    p{
+      text-align: center;
+      margin: 15px 0;
+      color: dimgray;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+  }
+
+  .nextBtn{
+    border: none;
+    outline: none;
+    background-color: rgb(102, 16, 4);
+    box-shadow: rgba(0, 0, 0, 0.7) 1px 6px 11px 1px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    min-width: 150px;
+    padding: 14px 7px 12px;
+    transition: box-shadow 0.5s ease 0s;
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+  .nextBtn:hover{
+    box-shadow: rgba(0, 0, 0, 0.7) 2px 2px 4px;
+  }
+}
+
+.show{
+  display: block;
+}
+
+.hidden{
+  display: none;
+}
